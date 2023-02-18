@@ -22,4 +22,4 @@ All feedback is greatly appreciated!
 
 # Visit the site
 
-
+https://awizp.github.io/3-column-preview-component/
