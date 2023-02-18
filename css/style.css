@@ -165,7 +165,7 @@ a, a:visited, a:active {
 }
 .sedans_container:hover::before {
   content: "";
-  background: url("../../img/sadens.png");
+  background: url("../img/sadens.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 45% 80%;
@@ -197,7 +197,7 @@ a, a:visited, a:active {
 }
 .suv_container:hover::before {
   content: "";
-  background: url("../../img/suv.png");
+  background: url("../img/suv.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 78% 80%;
@@ -229,7 +229,7 @@ a, a:visited, a:active {
 }
 .luxury_container:hover::before {
   content: "";
-  background: url("../../img/luxury.png");
+  background: url("../img/luxury.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70%;
