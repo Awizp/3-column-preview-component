@@ -1,0 +1,42 @@
+@use '../util' as u;
+
+h1, h2, h3 {
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    margin-top: 0;
+    font-family: u.$font1;
+    font-size: u.rem(28);
+    color: var(--gray-white-color);
+
+    @include u.breakpoint-down(large) {
+        font-size: u.rem(26);
+    }
+    
+    @include u.breakpoint-down(medium) {
+        font-size: u.rem(24);
+    }
+
+    @include u.breakpoint-down(small) {
+        font-size: u.rem(22);
+    }
+}
+
+p {
+    margin-top: 0;
+    font-family: u.$font2;
+    font-size: u.rem(15);
+    color: var(--white-transparent-color);
+
+    @include u.breakpoint-down(large) {
+        font-size: u.rem(14);
+    }
+    
+    @include u.breakpoint-down(medium) {
+        font-size: u.rem(13);
+    }
+}
+
+
+a, a:visited, a:active {
+    text-decoration: none;
+}

@@ -1,0 +1,64 @@
+@use "../util" as u;
+
+.main_container {
+    display: flex;
+    flex-direction: row;
+    width: u.rem(740); 
+    height: u.rem(495);
+    margin-inline: auto;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 250ms ease;
+
+    &>* {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: start;
+        padding: 1.5rem;
+    }
+
+    @include u.breakpoint-down(large) {
+        flex-direction: column;
+        flex-basis: 50%;
+        width: u.rem(420); 
+        height: u.rem(695);
+    }
+    
+    @include u.breakpoint-down(medium) {
+        flex-direction: column;
+        flex-basis: 50%;
+        width: u.rem(360); 
+        height: u.rem(645);
+    }
+
+    @include u.breakpoint-down(small) {
+        flex-direction: column;
+        flex-basis: 50%;
+        width: u.rem(300); 
+        height: u.rem(645);
+    }
+}
+
+.title_container, .btn_container, .svg_sedans, .svg_suv, .svg_luxury {
+    z-index: 1;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding: 0.7rem;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 1px 1.5px hsl(0, 1%, 40%, 0.5);
+        letter-spacing: u.rem(1);
+    }
+}
